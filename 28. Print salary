@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int id;
+    float salary;
+
+    printf("Enter employee ID: ");
+    scanf("%d", &id);
+    printf("Enter salary: ");
+    scanf("%f", &salary);
+
+    printf("Salary Slip\n");
+    printf("Employee ID: %d\nSalary: %.2f", id, salary);
+    return 0;
+}
