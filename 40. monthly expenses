@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int i;
+    float expense[3], total = 0;
+
+    for (i = 0; i < 3; i++) {
+        printf("Enter expense for day %d: ", i + 1);
+        scanf("%f", &expense[i]);
+        total += expense[i];
+    }
+
+    printf("Total monthly expenses = %.2f", total);
+    return 0;
+}
