@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int a[10], n, i, newValue;
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    for(i = 0; i < n; i++)
+        scanf("%d", &a[i]);
+
+    printf("Enter new value: ");
+    scanf("%d", &newValue);
+
+    a[n] = newValue;
+    n++;
+
+    printf("Updated Array:\n");
+    for(i = 0; i < n; i++)
+        printf("%d ", a[i]);
+
+    return 0;
+}
