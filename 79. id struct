@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+struct Item {
+    int id;
+    char name[20];
+};
+
+int main() {
+    int n, i, searchId;
+    struct Item it[10];
+
+    printf("Enter number of items: ");
+    scanf("%d", &n);
+
+    for(i = 0; i < n; i++)
+        scanf("%d %s", &it[i].id, it[i].name);
+
+    printf("Enter ID to search: ");
+    scanf("%d", &searchId);
+
+    for(i = 0; i < n; i++) {
+        if(it[i].id == searchId) {
+            printf("Found: %s\n", it[i].name);
+            return 0;
+        }
+    }
+
+    printf("Record not found\n");
+    return 0;
+}
