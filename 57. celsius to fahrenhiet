@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+float convertTemp(float c) {
+    return (c * 9 / 5) + 32;
+}
+
+int main() {
+    float c;
+
+    printf("Enter Celsius: ");
+    scanf("%f", &c);
+
+    printf("Fahrenheit = %.2f", convertTemp(c));
+    return 0;
+}
